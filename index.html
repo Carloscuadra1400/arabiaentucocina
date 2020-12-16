@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links -->
+    <link  rel="icon"   href="./css/imagenes/flag.jpg">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./scrollbar.css">
+    <title>Arabia en tu cocina</title>
+</head>
+<body>
+    <header>
+        <div class="princ">
+            <div class="tit">
+                <h1>Arabia en tu cocina</h1>
+                <br>
+                <h3>Aprende Sobre: <span class="typed"></span></h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="comida">
+            <div class="com">
+                <div class="comicon">
+                    <i class="fas fa-hamburger fa-7x" id="ic"></i>
+                </div>
+                <div class="cominfo">
+                    <p class="text1">Si quieres conocer una variedad de platillos principales de la gastronomia arabe te invito a que pulses el boton de abajo ;)</p>
+                    <a href="./comida.html"><input type="button" value="Comida"></a>
+                </div>
+            </div>
+        </section>
+        <section class="postres">
+            <div class="pos">
+                <div class="posicon">
+                    <i class="fas fa-birthday-cake fa-7x" id="ic"></i>
+                </div>
+                <div class="posinfo">
+                    <p class="text2">Si quieres conocer una variedad postres de la gastronomia arabe ricos y faciles de preparar te invito a que pulses el boton de abajo ;)</p>
+                    <a href="./postres.html"><input type="button" value="Postres"></a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Contacto</h4>
+                <a href="https://api.whatsapp.com/send?phone=50499817953&text=%C2%A1Buenos%20dias%20Carlos!%20Soy"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+            <div class="content-foo"> 
+                <h4>Creador</h4>
+                <p>Carlos Cuadra</p>
+                <a href="https://www.facebook.com/carlosalejandrocuadra"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/ccuadra140/"><i class="fab fa-instagram-square"></i></a>
+                
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; | Arabia en tu cocina | 2020</h2>
+    </footer>
+    <script>
+        window.onload = function(){
+            var contenedor = document.getElementById('contenedor-carga');
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="main.js"></script>
+</body>
+</html>

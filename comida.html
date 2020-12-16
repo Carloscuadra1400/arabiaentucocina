@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETC-Comida</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/carga.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/holis.css">
+    <link rel="stylesheet" href="./css/lehmeyun.css">
+    <link rel="stylesheet" href="./css/shish.css">
+    <link rel="stylesheet" href="./css/pipianes.css">
+    <link rel="stylesheet" href="./css/falafel.css">
+    <link rel="stylesheet" href="./css/kibbe.css">
+    <link rel="stylesheet" href="./css/cuscus.css">
+    <link rel="stylesheet" href="./css/doner.css">
+    <link rel="stylesheet" href="./css/hummus.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./scrollbar.css">
+    <script type="text/javascript" src="js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/utilities.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+    <link  rel="icon"   href="./css/imagenes/flag.jpg">
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+    <div id="contenedor-carga">
+        <div id="carga"></div>
+    </div>
+    <nav class="titl">
+        <label class="typed"></label>
+        <ul>
+            <li> <a href="https://www.itservtech.xyz/FP/">Pagina Principal</a></li>
+            <li><a class="active" href="./index.html">Inicio</a> </li>
+            <li> <a href="./comida.html">Comida</a></li>
+            <li> <a href="./postres.html">Postres</a></li>
+            
+        </ul>
+        <label for="" id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+    <main>
+        <section class="content-comida">
+            <div class="group1">
+                <div class="pipianes">
+                    <h3>Pipianes Rellenos</h3>
+                    <img src="./css/imagenes/pipianes.jpg" alt="">
+                    <div class="bot">
+                        <a href="#modal" id="abrir-modal"><input type="button" value="ingredientes"></a>
+                        <a href="#modal2" id="abrir-modal2"><input type="button" value="preparaciones"></a>
+                    </div>
+                    <aside id="modal" class="modal">
+                        <div class="content-modal">
+                            <header>
+                                <a href="#comida" class="close-modal">X</a>
+                                <h2>Ingredientes</h2>
+                            </header>
+                            <div class="modalbody">
+                                <ol class="inpip">
+                                    <li>3 pipianes pequeños partidos a la mitad</li>
+                                    <li>¼ kg de carne molida</li>
+                                    <li>Orégano al gusto</li>
+                                    <li>1 chile dulce</li>
+                                    <li>1 cebolla pequeña picada en cuadritos</li>
+                                    <li>1 pimiento morrón</li>
+                                    <li>2 dientes de ajo</li>
+                                    <li>Culantro al gusto</li>
+                                    <li>Sal y pimienta</li>
+                                    <li>2 huevos batidos</li>
+                                </ol>
+                                
+                            </div>
+                        </div>
+                        
+                        </aside>
+                        <aside id="modal2" class="modal2">
+                            <div class="content-modal2">
+                                <header>
+                                    <a href="#comida" class="close-modal2">X</a>
+                                    <h2>Preparacion</h2>
+                                </header>
+                                <div class="modalbody2">
+                                    <ol class="inpip">
+                                        <li>Ponga a hervir los pipianes en una olla con una pizca de sal</li>
+                                        <li>En un sartén arregle bien la carne con los vegetales, sal pimentar y agregar el orégano y cocine durante 20 minutos, posteriormente saque los pipianes partidos, retíreles el interior, rellénelos con la carne molida cocinada</li>
+                                        <li>Vierta el huevo en un sartén y forme 6 tortas a medio cocinar, póngalos sobre los pipíanes rellenos y luego hornee por 10 minutos para dorar</li>
+                                        
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                            
+                        </aside>
+                </div>
+                <div class="lehmeyun">
+                    <h3>Lehmeyun</h3>
+                    <img src="./css/imagenes/lehmeyun.jpg" alt="">
+                    <div class="botl">
+                        <a href="#modal3" id="abrir-modal3"><input type="button" value="ingredientes"></a>
+                        <a href="#modal4" id="abrir-modal4"><input type="button" value="preparaciones"></a>
+                    </div>
+                    <aside id="modal3" class="modal3">
+                        <div class="content-modal3">
+                            <header>
+                                <a href="#comida" class="close-modal3">X</a>
+                                <h2>Ingredientes</h2>
+                            </header>
+                            <div class="modalbody3">
+                                <ol class="inpip">
+                                    <li>   ½ kilo de harina</li>
+                                    <li>   ¾ kilo de carne picada</li>
+                                    <li>   5 o 6 limones</li>
+                                    <li>   4 tomates grandes y maduros</li>
+                                    <li>   2 cebollas grandes</li>
+                                    <li>   1 huevo</li>
+                                    <li>   1 taza de leche</li>
+                                    <li>   1 cucharada de aceite</li>
+                                    <li>   Levadura</li>
+                                    <li>   Orégano</li>
+                                    <li>   Adobo</li>
+                                    <li>   Sal</li>
+                                    <li>   Ají molido (opcional)</li>
+                                </ol>
+                                
+                            </div>
+                        </div>
+                        
+                        </aside>
+                        <aside id="modal4" class="modal4">
+                            <div class="content-modal4">
+                                <header>
+                                    <a href="#comida" class="close-modal4">X</a>
+                                    <h2>Preparacion</h2>
+                                </header>
+                                <div class="modalbody4">
+                                    <ol class="inpip">
+                                        <li>Coloca la carne picada en un bol y exprime sobre ella el jugo de 2 o 3 limones. Mezcla bien y deja reposar durante al menos 1 hora.
+                                        Mezcla la levadura con la leche tibia.
+                                        En otro recipiente, vierte la harina, la sal, el huevo, el aceite y la leche con levadura.</li>
+                                        <li>Revuelve y amasa hasta obtener una masa suave que no se pegue a los dedos.
+                                            Deja fermentar cubierto con un paño de cocina, hasta que duplique su volumen.
+                                            Mientras tanto, prepara el relleno. Pica la cebolla y rehógala en aceite caliente.</li>
+                                        <li>Cuando esté transparente, agrega la carne que has reservado y el tomate picado sin su piel.
+                                            Cocina a fuego bajo hasta que la carne tome un color marrón.
+                                            En el último momento, agrega los condimentos y apaga el fuego. (Usa bastante orégano y adobo, pues el relleno va bien condimentado).</li>
+                                        <li>Estira la masa dándole forma de discos.
+                                            Vierte unas gotas de aceite en una sartén y enciende muy bajo el fuego.
+                                            Coloca uno de los discos, deja que se dore con la sartén tapada, dale la vuelta y esparce encima una o dos cucharadas de relleno.</li>
+                                        <li>Tapa la sartén y deja que se cocine hasta que se dore la parte de abajo.
+                                            Saca el lehmeyún y sirve en un plato acompañado de unos gajos de limón.
+                                            Continúa cocinando todos los discos.</li>
+                                        
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                            
+                        </aside>
+                </div>
+                <div class="shish">
+                    <h3>Shish</h3>
+                    <img src="./css/imagenes/shish.jpg" alt="">
+                    <div class="bots">
+                        <a href="#modal5" id="abrir-modal5"><input type="button" value="ingredientes"></a>
+                        <a href="#modal6" id="abrir-modal6"><input type="button" value="preparaciones"></a>
+                    </div>
+                    <aside id="modal5" class="modal5">
+                        <div class="content-modal5">
+                            <header>
+                                <a href="#comida" class="close-modal5">X</a>
+                                <h2>Ingredientes</h2>
+                            </header>
+                            <div class="modalbody5">
+                                <ol class="inpip">
+                                    <li>600 g de Pata de cordero asada</li>
+                                    <li>300 g de Crema de yogur turco</li>
+                                    <li>1 ud de Cebolla</li>
+                                    <li>Ajo</li>
+                                    <li>Pimienta negra</li>
+                                    <li>Sal</li>
+                                    <li>Canela molida</li>
+                                    <li>50 g de Rúcula</li>
+                                </ol>
+                                
+                            </div>
+                        </div>
+                        
+                        </aside>
+                        <aside id="modal6" class="modal6">
+                            <div class="content-modal6">
+                                <header>
+                                    <a href="#comida" class="close-modal6">X</a>
+                                    <h2>Preparacion</h2>
+                                </header>
+                                <div class="modalbody6">
+                                    <ol class="inpip">
+                                        <li>Corta el cordero en cubos. Pon la crema de yogur en un tazón y remueve hasta que quede una consistencia suave.             
+                                        Corta la cebolla en cubos muy finos y agrega al yogur.
+                                        Añade 1-2 dedos de ajo recién exprimido.</li>
+                                        
+                                        <li>Sazona con sal y pimienta y una pizca de canela.
+                                        Agrega los cubos de carne de cordero en la salsa de yogur. Cubre y deja reposar en la nevera.
+                                        Pon el kebab en brochetas de metal y unta con la marinada.</li>
+                                        
+                                        <li>Pon los pinchos en una parrilla y pon por cada lado unos 12 minutos.
+                                        Presta atención a las brochetas mientras se asan ya que la marinada persa no debe quedar muy oscura.
+                                        Coloca el Shish Kebab en un plato con la ensalada de rúcula.</li>
+                                            
+                                        <li>Sirve también con pan de pita o arroz.</li>
+                                        
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                            
+                        </aside>
+                </div>
+                <div class="falafel">
+                    <h3>Falafel</h3>
+                    <img src="./css/imagenes/falafel.jpg" alt="">
+                    <div class="bots">
+                        <a href="#modal7" id="abrir-modal7"><input type="button" value="ingredientes"></a>
+                        <a href="#modal8" id="abrir-modal8"><input type="button" value="preparaciones"></a>
+                    </div>
+                    <aside id="modal7" class="modal7">
+                        <div class="content-modal7">
+                            <header>
+                                <a href="#comida" class="close-modal7">X</a>
+                                <h2>Ingredientes</h2>
+                            </header>
+                            <div class="modalbody7">
+                                <ol class="inpip">
+                                    <li>Medio kilo de garbanzos o de habas secas peladas (dejar en remojo la noche anterior)</li>
+                                    <li>2/3 cebollas picadas</li>
+                                    <li>1/2 taza de perejil fresco</li>
+                                    <li>1/2 taza de cilantro fresco</li>
+                                    <li>3 dientes de ajo, picados</li>
+                                    <li>2 cucharaditas de comino molido</li>
+                                    <li>1 taza pan rallado o de harina en caso de no tener pan rallado.</li>
+                                    <li>1 cucharada de bicarbonato (aconsejado) o levadura en polvo</li>
+                                    <li>1 cucharadita de sal</li>
+                                    <li>1 pizca de pimienta negra</li>
+                                    <li>1/2 cucharadita de cayena molida (opcional)
+                                    Aceite de girasol para freír</li>
+                                </ol>
+                                
+                            </div>
+                        </div>
+                        
+                        </aside>
+                        <aside id="modal8" class="modal8">
+                            <div class="content-modal8">
+                                <header>
+                                    <a href="#comida" class="close-modal8">X</a>
+                                    <h2>Preparacion</h2>
+                                </header>
+                                <div class="modalbody8">
+                                    <ol class="inpip">
+                                        <li>Lavar con agua y escurrir los garbanzos o habas dejados en remojo la noche anterior.</li>
+
+                                        <li>Triturar directamente los garbanzos «sin cocer» o habas con la batidora o picadora junto con las cebollas, los ajos, el perejil, el cilantro fresco y una taza de agua. Mezcle hasta conseguir una textura espesa.</li>
+
+                                        <li>Añadir la sal, el comino molido, la pimienta negra, la cayena (opcional) , el bicarbonato y mezclar un poco. Dejar reposar la mezcla durante 30 minutos.</li>
+
+                                        <li>Forme con la mezcla pequeñas bolas o mini hamburguesas, del tamaño de una pelota de ping pong.  Aplastelas un poco. Si la mezcla le queda demasiado húmeda por lo que le es dificil formar bolitas, se puede añadir un poco de pan rallado o harina de trigo.</li>
+
+                                        <li>Freír en abundante aceite de girasol a fuego medio/fuerte hasta que le queden dorados (5-7 minutos). Servir caliente.</li>
+                                        
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                            
+                        </aside>
+                </div>
+                <div class="kibbe">
+                    <h3>Kibbe</h3>
+                    <img src="./css/imagenes/kibbe.jpg" alt="">
+                    <div class="bots">
+                        <a href="#modal9" id="abrir-modal9"><input type="button" value="ingredientes"></a>
+                        <a href="#modal10" id="abrir-modal10"><input type="button" value="preparaciones"></a>
+                    </div>
+                    <aside id="modal9" class="modal9">
+                        <div class="content-modal9">
+                            <header>
+                                <a href="#comida" class="close-modal9">X</a>
+                                <h2>Ingredientes</h2>
+                            </header>
+                            <div class="modalbody9">
+                                <ol class="inpip">
+                                    <li>Para la masa:</li>
+                                    <li>1 kilo de carne de cordero sin grasa o de ternera finamente picada</li>
+                                    <li>1/2 kilo de trigo Bulgur fino (hay dos clases: fino y grueso)</li>
+                                    <li>1 cebolla grande y picada finamente</li>
+                                    <li>Sal y pimienta al gusto</li>
+                                    <li>Para el relleno:</li>
+                                    <li>3/4 de kilo de carne de ternera picada</li>
+                                    <li>2-3 cebollas picadas</li>
+                                    <li>2 dientes de ajo picados</li>
+                                    <li>1 cucharadita de pimienta blanca</li>
+                                    <li>1/2 cucharadita de canela</li>
+                                    <li>1 taza de perejil fresco y picado</li>
+                                    <li>150 g. de piñones fritos</li>
+                                    <li>1 vaso de aceite de oliva</li>
+                                    <li>Sal al gusto</li>
+                                </ol>
+                                
+                            </div>
+                        </div>
+                        
+                        </aside>
+                        <aside id="modal10" class="modal10">
+                            <div class="content-modal10">
+                                <header>
+                                    <a href="#comida" class="close-modal10">X</a>
+                                    <h2>Preparacion</h2>
+                                </header>
+                                <div class="modalbody10">
+                                    <ol class="inpip">
+                                        
+                                        <li>Lavar el burgul con agua fría y dejar en remojo durante 10 minutos.</li>
+
+                                        
+                                        <li>Escurrir el burgul y mezclarlo con la carne picada, la cebolla, la sal y la pimienta hasta obtener una masa homogénea y flexible. Reservar.</li>
+
+                                        
+                                        <li>Para el relleno: calentar aceite de oliva en una sartén y saltear la cebolla picada junto con el ajo.</li>
+
+                                        <li>Cuando la cebolla quede pochada, añadir la carne picada, la pimienta, la canela y la sal. Cocinar hasta que la carne quede un poco dorada. Añadir el perejil, mezclar y apartar del fuego.</li>
+
+                                        
+                                        <li>Empieza ahora a dar forma a las mezcla, haz bolas del tamaño de una pelota de golf  y presiona con la palma de la mano.</li>
+
+                                        <li>Colocar 1 cucharada de la mezcla de carne de ternera cocida en el centro, a continuación, cerrar la «masa». Hacer bolas de forma alargada un poco  ovalada y con los extremos puntiagudos. Coloquelas en una bandeja para hornear hasta que esté listo para freír.</li>
+
+                                        
+                                        <li>Calentar el aceite a fuego medio/fuerte. Poner a freir los kibes en el aceite y de pocos en pocos y cocine hasta que queden de color marrón oscuro y crujiente. Escurrir los kibes sobre papel absorvente para eliminar el exceso de aceite.</li>
+
+                                        <li>Sirva caliente con salsa de tahini y rodajas de limón. Buen provecho</li>
+                                        
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                            
+                        </aside>
+                </div>
+                <div class="cuscus">
+                    <h3>Cuscus</h3>
+                    <img src="./css/imagenes/cuscus.jpg" alt="">
+                    <div class="bots">
+                        <a href="#modal11" id="abrir-modal11"><input type="button" value="ingredientes"></a>
+                        <a href="#modal12" id="abrir-modal12"><input type="button" value="preparaciones"></a>
+                    </div>
+                    <aside id="modal11" class="modal11">
+                        <div class="content-modal11">
+                            <header>
+                                <a href="#comida" class="close-modal11">X</a>
+                                <h2>Ingredientes</h2>
+                            </header>
+                            <div class="modalbody11">
+                                <ol class="inpip">
+                                    <li>300 gr de cuscús</li>
+                                    <li>300 ml de caldo de verduras</li>
+                                    <li>1 pimiento mediano amarillo</li>
+                                    <li>200 gramos de calabaza</li>
+                                    <li>½ calabacín grande</li>
+                                    <li>2 dientes de ajo grandes</li>
+                                    <li>Especias: curry, jengibre, canela y comino en polvo</li>
+                                    <li>Cilantro</li>
+                                    <li>Pasas</li>
+                                    <li>1 cucharada de mantequilla</li>
+                                    <li>Aceite de oliva</li>
+                                    <li>Pimienta negra</li>
+                                    <li>Sal</li>
+
+                                </ol>
+                                
+                            </div>
+                        </div>
+                        
+                        </aside>
+                        <aside id="modal12" class="modal12">
+                            <div class="content-modal12">
+                                <header>
+                                    <a href="#comida" class="close-modal12">X</a>
+                                    <h2>Preparacion</h2>
+                                </header>
+                                <div class="modalbody12">
+                                    <ol class="inpip">
+                                        
+                                        <li>Lavar las verduras y cortarlas luego en pequeños dados.
+                                        <li>Picar el ajo en trozos muy pequeños, añadir a la verdura y sofreír en una sartén con aceite de oliva a fuego medio.</li>
+                                        <li>Cuando falte poco para que las verduras queden al dente, añadir las pasas, la canela en polvo, el comino y el jengibre.</li>
+                                        <li>Calentar 200 mL de caldo de verduras (también puede ser caldo de carne o pollo para dar sabor). Cuando hierva, retirar del fuego y poner en la cacerola el cuscús. Dejar que se hidrate durante aproximadamente tres minutos con la cacerola tapada para que no se escape el calor.</li>
+                                        <li>Una vez que hayan pasado los tres minutos, añadir la mantequilla (que se puede sustituir por el aceite de oliva) y remover. Esto se hace para que el cuscús quede suelto.</li>
+                                        <li>Añadir las verduras y poner el cilantro finamente picado para adornar y aromatizar el cuscús marroquí.</li>
+                                        
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                            
+                        </aside>
+                </div>
+                <div class="doner">
+                    <h3>Döner</h3>
+                    <img src="./css/imagenes/doner.jpg" alt="">
+                    <div class="bots">
+                        <a href="#modal13" id="abrir-modal13"><input type="button" value="ingredientes"></a>
+                        <a href="#modal14" id="abrir-modal14"><input type="button" value="preparaciones"></a>
+                    </div>
+                    <aside id="modal13" class="modal13">
+                        <div class="content-modal13">
+                            <header>
+                                <a href="#comida" class="close-modal13">X</a>
+                                <h2>Ingredientes</h2>
+                            </header>
+                            <div class="modalbody13">
+                                <ol class="inpip">
+                                    <li>1 kg pierna de cordero deshuesada</li>
+                                    <li>1 cebolla fresca cortada en cuadrados pequeños o en Juliana</li>
+                                    <li>50g perejil fresco</li>
+                                    <li>1/2 cucharadita pimienta negra</li>
+                                    <li>1/2 cucharadita pimienta blanca</li>
+                                    <li>1 pizca nuez moscada</li>
+                                    <li>1 pizca clavo molido</li>
+                                    <li>Un puñado de hojas de cilantro</li>
+                                    <li>1/2 cucharadita canela molida</li>
+                                    <li>150g aceite de oliva virgen extra</li>
+                                    <li>zumo de medio limón</li>
+                                    <li>Sal</li>
+
+                                </ol>
+                                
+                            </div>
+                        </div>
+                        
+                        </aside>
+                        <aside id="modal14" class="modal14">
+                            <div class="content-modal14">
+                                <header>
+                                    <a href="#comida" class="close-modal14">X</a>
+                                    <h2>Preparacion</h2>
+                                </header>
+                                <div class="modalbody14">
+                                    <ol class="inpip">
+                                        
+                                        <li>En un bol, mezclamos el perejil fresco y el cilantro fresco cortados en trocitos pequeños, la pimienta negra y la blanca, la nuez moscada, el clavo molido, la canela, el aceite de oliva virgen extra, el zumo de limón y la sal al gusto. Mezclamos bien y embadurnamos todo el cordero con esta mezcla.</li>
+
+                                        <li>Ponemos el cordero dentro de un tupper hermético y dejamos macerar durante toda la noche dentro de la nevera.</li>
+                                        <li>Al día siguiente, sacamos el cordero que ya estará macerado, y lo disponemos en una fuente apta para horno, En horno precalentado, horneamos a 180º calor arriba y abajo, durante 40 minutos aproximadamente.</li>
+
+                                        <li>Transcurrido el tiempo, retiramos el cordero del horno y dejamos templar hasta que no queme sobre la fuente del horno.</li>
+
+                                        <li>Cortamos la carne en finas lonchas y a tiras, preparamos el pan de pita pasándolo por una sartén, abrimos con cuidado y rellenamos con el cordero, trozos de tomate, cebolla, perejil y salsa de mahonesa.</li>
+
+                                        <li>Servimos caliente.</li>
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                            
+                        </aside>
+                </div>
+                <div class="hummus">
+                    <h3>Hummus</h3>
+                    <img src="./css/imagenes/Hummus.jpg" alt="">
+                    <div class="bots">
+                        <a href="#modal15" id="abrir-modal15"><input type="button" value="ingredientes"></a>
+                        <a href="#modal16" id="abrir-modal16"><input type="button" value="preparaciones"></a>
+                    </div>
+                    <aside id="modal15" class="modal15">
+                        <div class="content-modal15">
+                            <header>
+                                <a href="#comida" class="close-modal15">X</a>
+                                <h2>Ingredientes</h2>
+                            </header>
+                            <div class="modalbody15">
+                                <ol class="inpip">
+                                    <li>Garbanzos cocidos 400 g</li>
+                                    <li>Aceite de oliva virgen extra 70 g</li>
+                                    <li>Semillas de sésamo tostado 60 g</li>
+                                    <li>Agua 50 ml</li>
+                                    <li>Diente de ajo 1</li>
+                                    <li>Sal (aprox) 5 g</li>
+                                    <li>Zumo de limón 30 g</li>
+                                    <li>Comino molido (aprox) 5 g</li>
+                                    <li>Yogur natural opcional 100 g</li>
+
+                                </ol>
+                                
+                            </div>
+                        </div>
+                        
+                        </aside>
+                        <aside id="modal16" class="modal16">
+                            <div class="content-modal16">
+                                <header>
+                                    <a href="#comida" class="close-modal16">X</a>
+                                    <h2>Preparacion</h2>
+                                </header>
+                                <div class="modalbody16">
+                                    <ol class="inpip">
+                                        
+                                        <li>Lavamos bien los garbanzos para retirar el líquido en el que vienen sumergidos en la conserva. Escurrimos e introducimos en el vaso de un robot de cocina. Añadimos el diente de ajo pelado (si retiramos el germen queda más suave), el sésamo, el comino, la sal, el zumo de limón y el agua.</li>
+                                        <li>Trituramos hasta obtener una masa semi homogénea antes de incorporar el aceite de oliva virgen extra. Continuamos triturando unos minutos o hasta obtener una mezcla cremosa.</li>
+                                        <li>La consistencia del hummus es algo muy personal, por eso recomendamos ajustar el punto de espesor añadiendo un poco más de agua y/o aceite hasta obtener el deseado. En el momento de servir rociamos con un chorrito de aceite de oliva virgen extra, semillas variadas y pimentón dulce. Otros toppings que podemos añadir son aceitunas o perejil picado. Al gusto.</li>
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                            
+                        </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Contacto</h4>
+                <a href="https://api.whatsapp.com/send?phone=50499817953&text=%C2%A1Buenos%20dias%20Carlos!%20Soy"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+            <div class="content-foo"> 
+                <h4>Creador</h4>
+                <p>Carlos Cuadra</p>
+                <a href="https://www.facebook.com/carlosalejandrocuadra"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/ccuadra140/"><i class="fab fa-instagram-square "></i></a>
+                
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; | Arabia en tu cocina | 2020</h2>
+    </footer>
+    <script>
+        window.onload = function(){
+            var contenedor = document.getElementById('contenedor-carga');
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="menu.js"></script>
+    
+    <script>
+        
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.content-comida{
+    width: 100%;
+    background-color: rgb(226, 255, 169);
+    margin: center auto;
+    background: linear-gradient(to right, hsla(0, 0%, 13%, 0.589), hsla(0, 0%, 9%, 0.671)), url(./imagenes/cocina.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+.group1{
+    width: 90%;
+    
+    display: inline-block;
+    margin-left: 5%;
+    margin: center auto;
+    justify-content: center;
+}
+
+@media(min-width: 1024px){
+    .group1{
+        width: 80%;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 3rem;
+        padding-bottom:  5%;
+        margin-left: 10%;
+        
+    }
+    
+}
